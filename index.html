@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <div class="container">
+
+        <!-- Row start -->
+        <div class="row align-items-start">
+          <div id="9am" class="col col-lg-1"> 09:00Am
+          </div>
+          <textarea id="input09am" class="col"> </textarea>
+          <button id="saveBtn" class="col col-lg-1">
+              <i class="fas fa-cloud-upload-alt"></i>
+          </button>
+        </div>
+        <!-- Row end --> 
+        <!-- Row start -->
+        <div class="row align-items-start">
+            <div id="10am" class="col col-lg-1"> 10:00Am
+            </div>
+            <textarea id="input10am" class="col"> </textarea>
+            <button id="saveBtn" class="col col-lg-1">
+                <i class="fas fa-cloud-upload-alt"></i>
+            </button>
+          </div>
+          <!-- Row end --> 
+          <!-- Row start -->
+        <div class="row align-items-start">
+            <div id="11am" class="col col-lg-1"> 11:00Am
+            </div>
+            <textarea id="input11am" class="col"> </textarea>
+            <button id="saveBtn" class="col col-lg-1">
+                <i class="fas fa-cloud-upload-alt"></i>
+            </button>
+          </div>
+          <!-- Row end --> 
+          <!-- Row start -->
+        <div class="row align-items-start">
+            <div id="12am" class="col col-lg-1"> 12:00Am
+            </div>
+            <textarea id="input12am" class="col"> </textarea>
+            <button id="saveBtn" class="col col-lg-1">
+                <i class="fas fa-cloud-upload-alt"></i>
+            </button>
+          </div>
+          <!-- Row end --> 
+          <!-- Row start -->
+        <div class="row align-items-start">
+            <div id="01pm" class="col col-lg-1"> 01:00Pm
+            </div>
+            <textarea id="input01pm" class="col"> </textarea>
+            <button id="saveBtn" class="col col-lg-1">
+                <i class="fas fa-cloud-upload-alt"></i>
+            </button>
+          </div>
+          <!-- Row end --> 
+          <!-- Row start -->
+        <div class="row align-items-start">
+            <div id="02pm" class="col col-lg-1"> 02:00Pm
+            </div>
+            <textarea id="input02pm" class="col"> </textarea>
+            <button id="saveBtn" class="col col-lg-1">
+                <i class="fas fa-cloud-upload-alt"></i>
+            </button>
+          </div>
+          <!-- Row end --> 
+          <!-- Row start -->
+        <div class="row align-items-start">
+            <div id="03pm" class="col col-lg-1"> 03:00Pm
+            </div>
+            <textarea id="input03pm" class="col"> </textarea>
+            <button id="saveBtn" class="col col-lg-1">
+                <i class="fas fa-cloud-upload-alt"></i>
+            </button>
+          </div>
+          <!-- Row end --> 
+          <!-- Row start -->
+        <div class="row align-items-start">
+            <div id="04pm" class="col col-lg-1"> 04:00Pm
+            </div>
+            <textarea id="input04pm" class="col"> </textarea>
+            <button id="saveBtn" class="col col-lg-1">
+                <i class="fas fa-cloud-upload-alt"></i>
+            </button>
+          </div>
+          <!-- Row end --> 
+          <!-- Row start -->
+        <div class="row align-items-start">
+            <div id="05pm" class="col col-lg-1"> 05:00Pm
+            </div>
+            <textarea id="input05pm" class="col"> </textarea>
+            <button id="saveBtn" class="col col-lg-1">
+                <i class="fas fa-cloud-upload-alt"></i>
+            </button>
+          </div>
+          <!-- Row end --> 
+        </div>
+      </div>
+    </div>
+   
+ 
+    <!-- Moment Js-->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/index.js"></script>
+  </body>
+</html>
