@@ -11,33 +11,57 @@ var threepm = document.getElementById("input03pm");
 var fourpm = document.getElementById("input04pm");
 var fivepm = document.getElementById("input05pm");
 
-var saveBtn = $("#saveBtn");
+var hour = moment().hours();
 
-saveBtn.click(function(){
-    onSave("nineam");
-    onSave("tenam");
-    onSave("elevenam");
-    onSave("twelveam");
-    onSave("onepm");
-    onSave("twopm");
-    onSave("threepm");
-    onSave("fourpm");
-    onSave("fivepm");
+var saveBtn09 = $("#saveBtn09");
+var saveBtn10 = $("#saveBtn10");
+var saveBtn11 = $("#saveBtn11");
+var saveBtn12 = $("#saveBtn12");
+var saveBtn13 = $("#saveBtn13");
+var saveBtn14 = $("#saveBtn14");
+var saveBtn15 = $("#saveBtn15");
+var saveBtn16 = $("#saveBtn16");
+var saveBtn17 = $("#saveBtn17");
 
+saveBtn09.click(function(){
+    onSave("nineam", nineam);
+})
+
+saveBtn10.click(function(){
+    onSave("tenam", tenam);
 }) 
 
+saveBtn11.click(function(){
+    onSave("elevenam", elevenam);
+}) 
 
+saveBtn12.click(function(){
+    onSave("twelveam", twelveam);
+}) 
 
-function onSave (label) {
-    localStorage.setItem(label, nineam.value);
-    localStorage.setItem(label, tenam.value);
-    localStorage.setItem(label, elevenam.value);
-    localStorage.setItem(label, twelveam.value);
-    localStorage.setItem(label, onepm.value);
-    localStorage.setItem(label, twopm.value);
-    localStorage.setItem(label, threepm.value);
-    localStorage.setItem(label, fourpm.value);
-    localStorage.setItem(label, fivepm.value);
+saveBtn13.click(function(){
+    onSave("onepm", onepm);
+}) 
+
+saveBtn14.click(function(){
+    onSave("twopm", twopm);
+}) 
+
+saveBtn15.click(function(){
+    onSave("threepm", threepm);
+}) 
+
+saveBtn16.click(function(){
+    onSave("fourpm", fourpm);
+}) 
+
+saveBtn17.click(function(){
+    onSave("fivepm", fivepm);
+}) 
+
+function onSave (label, inputElement) {
+    localStorage.setItem(label, inputElement.value);
+    
 }
 
 function init () {
@@ -53,10 +77,23 @@ function init () {
     fivepm.value = localStorage.getItem("fivepm");
 } 
 
-init ()
 
 function background () {
-    var hours 
-    console.log(hours)
+     
+    $(".row").each(function () {
+        var rowhour = parseInt($(this).attr("id"));
+        console.log(hour)
+        console.log(rowhour)
+        console.log($(this).find('textarea'));
+        if (rowhour < hour) {
+            $(this).addClass("past");
+        } else if (hour === rowhour) {
+            $(this).addClass("present");
+        } else if (hour > rowhour) {
+            $(this).addClass("future");
+        }
+    });
+  }
 
-}
+ background()
+ init ()

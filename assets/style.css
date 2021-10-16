@@ -45,7 +45,7 @@ textarea {
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #b1aeae;
   color: white;
 }
 
@@ -59,7 +59,15 @@ textarea {
   color: white;
 }
 
-#saveBtn {
+#saveBtn09,
+#saveBtn10,
+#saveBtn11,
+#saveBtn12,
+#saveBtn13,
+#saveBtn14,
+#saveBtn15,
+#saveBtn16,
+#saveBtn17 {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
