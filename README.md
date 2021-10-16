@@ -22,6 +22,6 @@ URL:  https://gugacorchog.github.io/Day-planner/
 
 Screenshot:
 
-![URLScreenshot]()
+![URLScreenshot](https://github.com/gugacorchog/Day-planner/blob/main/assets/images/Screeshot.jpg)
 
 
